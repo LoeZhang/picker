@@ -225,12 +225,17 @@ class MainActivity : AppCompatActivity()
         })
         pickerNetThreeDialog.setTail("申", "全", "元")
 
+        val pickerTimeDialog = PickerTimeDialog(this, PickerTimeDialog.Type.DATE_TIME)
+        {
+        }
+
         button.setOnClickListener()
         {
 //            picker.selectSameName("付出")
 //            picker.show()
 //            pickerNetDialog.show()
-            pickerNetThreeDialog.show()
+//            pickerNetThreeDialog.show()
+            pickerTimeDialog.show()
         }
     }
 }
