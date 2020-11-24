@@ -93,6 +93,14 @@ public class XTime implements Serializable
     }
 
     /**
+     * 格式化显示
+     */
+    public String formatStaticHM(String code)
+    {
+        return formatStaticDate(code) + " " + formatStaticTimeHM();
+    }
+
+    /**
      * 格式化显示日期
      */
     public String formatDate(String code)
@@ -130,6 +138,22 @@ public class XTime implements Serializable
     public String formatStaticTime()
     {
         return String.format("%02d:%02d:%02d", getHour(), getMinute(), getSecond());
+    }
+
+    /**
+     * 格式化显示时间
+     */
+    public String formatStaticTimeHM()
+    {
+        return String.format("%02d:%02d", getHour(), getMinute());
+    }
+
+    /**
+     * 格式化显示时间
+     */
+    public String formatTimeHM()
+    {
+        return String.format("%02d:%02d", getHour(), getMinute());
     }
 
     /**
