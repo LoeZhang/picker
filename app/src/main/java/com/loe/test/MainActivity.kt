@@ -225,7 +225,7 @@ class MainActivity : AppCompatActivity()
         })
         pickerNetThreeDialog.setTail("申", "全", "元")
 
-        val pickerTimeDialog = PickerTimeDialog(this, PickerTimeDialog.Type.DATE_TIME)
+        val pickerTimeDialog = PickerTimeDialog(this, PickerTimeDialog.Type.DATE_MINUTE)
         {
         }
 

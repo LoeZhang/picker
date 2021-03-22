@@ -107,10 +107,12 @@ public class PickerTimeDialog
 
     public enum Type
     {
-        DATE_TIME(R.layout.picker_date_time_layout, new boolean[]{true, true, true, true, true,
-                true}), DATE(R.layout.picker_date_layout, new boolean[]{true, true, true, false,
-            false, false}), TIME(R.layout.picker_time_layout, new boolean[]{false, false, false,
-            true, true, true});
+        DATE_TIME(R.layout.picker_date_time_layout, new boolean[]{true, true, true, true, true, true}),
+        DATE_MINUTE(R.layout.picker_date_minute_layout, new boolean[]{true, true, true, true, true, false}),
+        MONTH(R.layout.picker_month_layout, new boolean[]{true, true, false, false, false, false}),
+        DATE(R.layout.picker_date_layout, new boolean[]{true, true, true, false, false, false}),
+        MINUTE(R.layout.picker_minute_layout, new boolean[]{false, false, false, true, true, false}),
+        TIME(R.layout.picker_time_layout, new boolean[]{false, false, false, true, true, true});
 
         Type(int layoutId, boolean[] types)
         {
