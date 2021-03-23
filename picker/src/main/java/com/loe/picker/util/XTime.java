@@ -117,6 +117,14 @@ public class XTime implements Serializable
     }
 
     /**
+     * 格式化显示日期
+     */
+    public String formatStaticMonth(String code)
+    {
+        return getYear() + code + (getMonth() > 9 ? "" : "0") + getMonth();
+    }
+
+    /**
      * 格式化显示汉字日期
      */
     public String formatDateCN()
